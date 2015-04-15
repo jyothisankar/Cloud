@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>
+<%=title %>
+</title>
+
+  <link rel='stylesheet' href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
+
+    <link rel="stylesheet" href="login/css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+<% for(var i in messages) { %>
+<div class="flash"><%= messages[i] %></div>
+<% } %>
+
+  <div class="login-card">
+    <h1>Log-in</h1><br>
+  <form action="/signin" method="post">
+ <div>
+	<label>Username:</label>
+	<input type="text" name="username" />
+</div>
+	<br />
+<div>
+	<label>Password:</label>
+	<input type="password" name="password" />
+</div>
+	<br />
+<div>
+	<input type="submit" value="Sign In" />
+</div>
+  </form>
+
+  
+</div>
+
+<!-- <div id="error"><img src="https://dl.dropboxusercontent.com/u/23299152/Delete-icon.png" /> Your caps-lock is on.</div> -->
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
+
+</body>
+
+</html>

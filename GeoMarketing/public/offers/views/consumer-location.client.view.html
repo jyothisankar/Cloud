@@ -1,0 +1,35 @@
+<section data-ng-controller="OffersController" data-ng-init="findLocation()">
+	
+	<h2>Enter your Geo Location</h2>
+	<p></p>
+	<form data-ng-submit="getLocalOffers()" novalidate>			
+		<div>
+		Longitude:<input type = "text" id="long" data-ng-model="long" placeholder="long"/><br><br />
+		Latitude :<input type = "text" id="lat" data-ng-model="lat" placeholder="lat"/><br><br />
+		
+		<input type="submit"/>
+		</div>		
+	</form>
+	
+	<div data-ng-repeat="o in offers">
+
+		<ul>
+			<li>
+				<div>
+					<table border = "1" width = "80%">
+					<tr><td width = "20%">Title</td> <td><small data-ng-bind="o.title"></small></td> </tr> 
+					<tr><td width = "20%">Description</td> <td><small data-ng-bind="o.desc"></small></td> </tr>
+					<tr><td width = "20%">Start Time</td> <td><small data-ng-bind="o.start_time"></small> </td></tr>
+					<tr><td width = "20%">End Time</td> <td><small data-ng-bind="o.end_time"></small></td> </tr>
+					<tr><td width = "20%">Discount</td> <td><small data-ng-bind="o.start_discount"></small></td></tr>
+					<tr><td width = "20%">Quantity_Left</td> <td><small data-ng-bind="o.Quantity_Remaining"></small></td><br />
+					
+					</table><br />
+					<input type="button" value="Like"></input></tr>
+				</div>
+			</li>
+		</ul>
+	</textarea>
+	</div>
+
+</section>

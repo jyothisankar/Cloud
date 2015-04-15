@@ -1,0 +1,21 @@
+<section data-ng-controller="OffersController" data-ng-init="find()">
+	<h1>Offers</h1>
+	<div data-ng-repeat="offer in offers" >
+		<ul data-ng-show="authentication.user._id == offer.creator._id">
+			<li >
+				<div >
+					<a data-ng-href="#!/offers/{{offer._id}}" data-ng-bind="offer.title"></a>
+					<br>
+					<small data-ng-bind="offer.updated_at | date:'medium'"></small>
+					<small>/</small>
+					<small data-ng-bind="offer.creator.fullName"></small>
+					<p data-ng-bind="offer.desc"></p>
+				</div>
+		
+			</li>
+		</ul>
+	
+	<div data-ng-hide="!offers || offers.length">
+		No articles yet, why don't you <a href="/#!/offers/create">create one</a>?
+	</div>
+</section>

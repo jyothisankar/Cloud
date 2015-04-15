@@ -1,0 +1,25 @@
+<section data-ng-controller="OffersController" data-ng-init="findOne()">
+	
+	<div data-ng-show="authentication.user._id == offer.creator._id">
+		<h1 data-ng-bind="offer.title"></h1>
+		<a href="/#!/offers/{{offer._id}}/edit">edit</a>
+		<a href="#" data-ng-click="delete();">delete</a>
+		<small>
+		<em>Posted on</em>
+		<em data-ng-bind="offer.updated_at | date:'mediumDate'"></em>
+		<em>by</em>
+		<em data-ng-bind="offer.creator.fullName"></em>
+		<br /> <br />
+	</small>
+	Offer Description : <p data-ng-bind="offer.desc"></p>
+	Offer Start Time : <p data-ng-bind="offer.start_time"></p>
+	Offer End Time : <p data-ng-bind="offer.end_time"></p>
+	Offer Start Discount : <p data-ng-bind="offer.start_discount"></p>
+	Offer Max Discount : <p data-ng-bind="offer.max_discount"></p>
+	Quantity_Remaining : <p data-ng-bind="offer.Quantity_Remaining"></p>
+	</div>
+	<div data-ng-show="!(authentication.user._id == offer.creator._id)">
+		<p>you donot have permission to view this offer</p>
+	</div>
+	
+</section>

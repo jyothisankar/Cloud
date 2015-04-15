@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SignUp Form</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="signup/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="signup/demo.css" media="all" />
+</head>
+<body>
+<div class="container">
+			<!-- freshdesignweb top bar -->
+            <div class="freshdesignweb-top">
+                <a href="/" target="_blank">Home</a>
+                
+                <div class="clr"></div>
+            </div><!--/ freshdesignweb top bar -->
+			<header>
+				<h1>Create New Account</h1>
+            </header>       
+      <div  class="form">
+<form action="/signup" method="post">
+<div>
+<p class="contact"><label for="Fname">FirstName*</label></p> 
+    			<input id="name" name="firstName" placeholder="First name" required="" tabindex="1" type="text"> 
+    			 
+</div>
+<br />
+<div>
+<p class="contact"><label for="Lname">LastName*</label></p> 
+    			<input id="name" name="lastName" placeholder="Last name" required="" tabindex="1" type="text"> 
+</div>
+<br />
+<div>
+<p class="contact"><label for="email">Email</label></p> 
+    			<input id="email" name="email" placeholder="example@domain.com" required="" tabindex="1" type="email"> 
+</div>
+<br />
+<div>
+<p class="contact"><label for="username">Create a UserName*</label></p> 
+    			<input id="username" name="username" placeholder="username" required="" tabindex="1" type="text"> 
+</div>
+<br />
+<div>
+<p class="contact"><label for="password">Create a Password*</label></p> 
+    			<input type="password" id="password" name="password" required="" tabindex="1"> 
+</div>
+<br />    
+<div>        
+            <select class="select-style gender" name="type" tabindex="1">
+            <option value="select">i am..*</option>
+            <option value="m">Customer</option>
+            <option value="f">Seller</option>
+            </select><br><br>
+</div>  
+<div>          
+            <p class="contact"><label for="phone">Mobile phone</label></p> 
+            <input id="phone" name="phone" placeholder="phone number" required="" tabindex="1" type="text"> <br><br />
+</div>
+
+	<div>
+            <input class="buttom" name="submit" id="submit" tabindex="5" value="Sign me up!" type="submit"> 	 
+	</div>
+   </form> 
+</div>      
+</div>
+
+</body>
+</html>

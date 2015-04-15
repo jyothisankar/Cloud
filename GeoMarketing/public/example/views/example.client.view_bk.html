@@ -1,0 +1,21 @@
+<section ng-controller="ExampleController">
+
+	<center><h2>GeoMarkettingApp</h2></center>
+	
+	<h4><div data-ng-show="!authentication.user">
+		<h3>Seller LogIn </h3>	
+		<a href="/signup">Signup</a> <br /><br />
+		<a href="/signin">Signin</a> 
+		<h3><a href="/#!/location">Consumer</a></h3></h4>		
+
+	</div>
+	<div data-ng-show="authentication.user">
+		<h1>Hello <span data-ng-bind="authentication.user.fullName"></span></h1>
+		<a href="/signout">Signout</a>
+		<ul>
+			<li><a href="/#!/offers">List Offers</a></li>
+			<li><a href="/#!/offers/create">Create Offers</a></li>
+
+		</ul>
+	</div>
+</section>

@@ -1,0 +1,80 @@
+<section data-ng-controller="OffersController">
+	<h1>New Offer</h1>
+	<form data-ng-submit="create()" novalidate>
+		<div>
+			<label for="title">Title</label>
+			<div>
+				<input type="text" data-ng-model="title" id="title" placeholder="Title" required>
+			</div>
+		</div>
+		<div>
+			<label for="desc">Description</label>
+			<div>
+				<textarea data-ng-model="desc" id="desc" cols="30" rows="10" placeholder="desc"></textarea>
+			</div>
+		</div>	
+		<div>
+			<label for="loc">Location:</label>
+		</div>
+		<div>
+			<label for="long">Longitude</label>
+			<div>
+				<input type="text" data-ng-model="long" id="long" cols="30" rows="10" placeholder="long">
+			</div>
+		</div>
+		<div>
+			<label for="lat">Latitude</label>
+			<div>
+				<input type="text" data-ng-model="lat" id="lat" cols="30" rows="10" placeholder="lat">
+			</div>
+		</div>
+		<div>
+			<label for="start_time">Start Time</label>
+			<div>
+				<input type="text" data-ng-model="start_time" id="start_time" cols="30" rows="10" placeholder="start_time">
+			</div>
+		</div>
+		<div>
+			<label for="end_time">End Time</label>
+			<div>
+				<input type="text" data-ng-model="end_time" id="end_time" cols="30" rows="10" placeholder="end_time">
+			</div>
+		</div>
+		<div>
+			<label for="start_discount">Start Discount</label>
+			<div>
+				<input type="text" data-ng-model="start_discount" id="start_discount" cols="30" rows="10" placeholder="start_discount">
+			</div>
+		</div>
+		<div>
+			<label for="max_discount">Max Discount</label>
+			<div>
+				<input type="text" data-ng-model="max_discount" id="max_discount" cols="30" rows="10" placeholder="max_discount">
+			</div>
+		</div>
+		<div>
+			<label for="like_incrementor">Like Incrementor</label>
+			<div>
+				<input type="text" data-ng-model="like_incrementor" id="like_incrementor" cols="30" rows="10" placeholder="like_incrementor">
+			</div>
+		</div>
+		<div>
+			<label for="discount_rate">Discount Rate</label>
+			<div>
+				<input type="text" data-ng-model="discount_rate" id="discount_rate" cols="30" rows="10" placeholder="discount_rate">
+			</div>
+		</div>
+		<div>
+			<label for = "Quantity_Remaining">Quantity Remaining</label>
+			<div>
+				<input type="text" data-ng-model="Quantity_Remaining" id="Quantity_Remaining" cols="30" rows="10" placeholder="Quantity_Remaining">
+			</div>
+		</div>
+		<div>
+			<input type="submit">
+		</div>
+		<div data-ng-show="error">
+			<strong data-ng-bind="error"></strong>
+		</div>
+	</form>
+</section>
