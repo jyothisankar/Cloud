@@ -4,7 +4,7 @@ Amazon web services(AWS) and to make sure that high availability and scalability
 
 Technologies used:
 NodeJs : Server side scripting; 
-AngularJs : Front end scripting; 
-Mongo DB : Database to store the data; 
+AngularJs : Front end development; 
+Mongo DB : Database to store the data(products and it's details); 
 ExpressJs : REST framework development; 
 Amazon Web Services(AWS) : To deploy the final application;
