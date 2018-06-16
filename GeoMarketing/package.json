@@ -9,7 +9,7 @@
   "keywords": [
     "app"
   ],
-  "author": "vignesh",
+  "author": "sankar",
   "license": "BSD-2-Clause",
   "dependencies": {
     "express": "~4.8.8",
